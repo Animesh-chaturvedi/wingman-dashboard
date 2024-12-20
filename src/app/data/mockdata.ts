@@ -65,7 +65,34 @@ export const mockData = {
             },
       },
     orders: [
-      { productName: 'Product A', date: '24 Apr 2024', timeSpent: '2h 5m', orderValue: '$120.21', commission: '$55' },
+        {
+            product: 'Product Name That Is Very Long And Needs Truncation',
+            date: '24 Apr 2024\n10:24 AM',
+            timeSpent: '2h 5m',
+            orderValue: '$120,21',
+            commission: '$55',
+          },
+          {
+            product: 'Another Product Name That Overflows',
+            date: '24 Apr 2024\n10:24 AM',
+            timeSpent: '2h 5m',
+            orderValue: '$120,21',
+            commission: '$55',
+          },
+          {
+            product: 'Short Product Name',
+            date: '24 Apr 2024\n10:24 AM',
+            timeSpent: '2h 5m',
+            orderValue: '$120,21',
+            commission: '$55',
+          },
+          {
+            product: 'A Very Very Long Product Name That Will Definitely Be Truncated',
+            date: '24 Apr 2024\n10:24 AM',
+            timeSpent: '2h 5m',
+            orderValue: '$120,21',
+            commission: '$55',
+          },
     ],
   };
   

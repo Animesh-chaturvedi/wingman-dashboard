@@ -8,12 +8,13 @@ import Dropdown from './components/Dropdown';
 import ConsultationsChart from './components/ConsultationsChart';
 import ComparisonChart from './components/ComparisonChart';
 import ForecastCard from './components/ForecastCard';
+import OrdersTable from './components/OrderTable';
 import { mockData } from './data/mockdata';
 import { useState } from 'react';
 
 export default function DashboardPage() {
   const [timeRange, setTimeRange] = useState('7 days');
-  const { summary, insights } = mockData;
+  const { summary, insights, orders } = mockData;
 
   return (
     <div className="flex">
@@ -59,20 +60,7 @@ export default function DashboardPage() {
           </section>
           <section className="mb-6">
             <h2 className="text-[2rem]/[38px] font-semibold mb-8 mt-12">Orders</h2>
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-              {/* Consultations Combined Chart */}
-              <div className="col-span-5 md:col-span-3">
-                <ConsultationsChart data={insights.consultationsChart} />
-              </div>
-              {/* Comparison Bar Chart */}
-              <div className="col-span-5 md:col-span-1">
-                <ComparisonChart data={insights.comparisonChart} />
-              </div>
-              {/* Forecast Card */}
-              <div className="col-span-5 md:col-span-1">
-                <ForecastCard forecast={insights.forecast} />
-              </div>
-            </div>
+            <OrdersTable orders={orders} />
           </section>
         </Content>
       </div>
