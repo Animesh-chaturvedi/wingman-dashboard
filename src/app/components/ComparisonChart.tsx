@@ -7,7 +7,6 @@ import {
     Tooltip,
     ResponsiveContainer,
   } from 'recharts';
-  import { FaChartBar } from 'react-icons/fa';
   import { BsBarChartLineFill } from "react-icons/bs";
 
   

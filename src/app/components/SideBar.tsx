@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image';
-import { AiFillHome, AiFillMessage, AiFillSetting } from 'react-icons/ai';
+import { AiFillHome, AiFillSetting } from 'react-icons/ai';
 import { PiUsersFourFill } from "react-icons/pi";
 import { useState } from 'react';
 import { BsFillChatFill } from "react-icons/bs";

@@ -13,7 +13,7 @@ import { mockData } from './data/mockdata';
 import { useState } from 'react';
 
 export default function DashboardPage() {
-  const [timeRange, setTimeRange] = useState('7 days');
+  const [ , setTimeRange] = useState('7 days');
   const { summary, insights, orders } = mockData;
 
   return (
