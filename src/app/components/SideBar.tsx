@@ -15,7 +15,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="hidden md:flex sticky top-0 bg-teal-800 text-white w-15 h-screen flex flex-col items-center py-6">
+    <div className="hidden md:flex sticky top-0 bg-teal-800 text-white w-15 h-screen flex-col items-center py-6" style={{minWidth:"60px", width:"60px"}}>
       <div className="mb-8">
         <Image src="/Logo.png" alt="Logo" width={32} height={32} />
       </div>
