@@ -1,4 +1,5 @@
-import { FaShoppingCart, FaChartLine, FaPercentage, FaDollarSign, FaCalculator } from 'react-icons/fa';
+import { PiChatTeardropTextFill, PiCoinsFill, PiCoinFill, PiPiggyBankFill, PiCheckFatFill } from "react-icons/pi";
+import { FaTag } from "react-icons/fa6";
 
 export const mockData = {
     summary: [
@@ -7,42 +8,42 @@ export const mockData = {
           title: 'Consultations',
           value: 24,
           percentage: 15,
-          icon: FaChartLine,
+          icon: PiChatTeardropTextFill,
         },
         {
           id: 2,
           title: 'Orders Placed',
           value: 12,
           percentage: -15,
-          icon: FaShoppingCart ,
+          icon: FaTag ,
         },
         {
           id: 3,
           title: 'Conversion Rate',
           value: '50%',
           percentage: -15,
-          icon: FaPercentage,
+          icon: PiCheckFatFill,
         },
         {
           id: 4,
           title: 'Total Sales Value',
           value: '$2,400',
           percentage: 15,
-          icon: FaDollarSign,
+          icon: PiCoinsFill,
         },
         {
           id: 5,
           title: 'Avg Order Value',
           value: '$240',
           percentage: 15,
-          icon: FaCalculator,
+          icon: PiCoinFill,
         },
         {
           id: 6,
           title: 'Commission Paid',
           value: '$240',
           percentage: 15,
-          icon: FaDollarSign,
+          icon: PiPiggyBankFill,
         },
       ],
       insights: {

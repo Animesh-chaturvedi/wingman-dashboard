@@ -22,7 +22,6 @@ export default function DashboardPage() {
       <div className="flex-1 flex flex-col w-full max-w-full">
         <Navbar />
         <Content >
-          {/* At a Glance Section */}
           <section className="mb-8 flex flex-col overflow-hidden">
             <div className="flex justify-between mb-4">
               <h2 className="text-[2rem]/[38px] font-semibold mb-4">At a Glance</h2>
@@ -47,17 +46,6 @@ export default function DashboardPage() {
           
            <section className="mb-6">
             <h2 className="text-[2rem]/[38px] font-semibold mb-8 mt-12">Insights</h2>
-            {/* <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-              <div className="col-span-5 md:col-span-3">
-                <ConsultationsChart data={insights.consultationsChart} />
-              </div>
-              <div className="col-span-5 md:col-span-1">
-                <ComparisonChart data={insights.comparisonChart} />
-              </div>
-              <div className="col-span-5 md:col-span-1">
-                <ForecastCard forecast={insights.forecast} />
-              </div>
-            </div> */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                 <div className="col-span-1 md:col-span-2 lg:col-span-3">
                     <ConsultationsChart data={insights.consultationsChart} />

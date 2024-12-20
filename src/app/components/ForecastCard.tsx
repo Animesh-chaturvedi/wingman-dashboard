@@ -1,4 +1,4 @@
-import { FaArrowUp } from 'react-icons/fa';
+
 import { BsFillChatFill } from "react-icons/bs";
 import { IoIosTrendingUp, IoIosTrendingDown  } from "react-icons/io";
 
@@ -11,12 +11,10 @@ interface ForecastCardProps {
 const ForecastCard: React.FC<ForecastCardProps> = ({ forecast }) => {
   return (
     <div className="bg-gradient-to-br from-[#15B79F] to-[#0E9382] text-white rounded-[20px] p-6 shadow-sm pb-16 h-full flex flex-col">
-      {/* Heading */}
       <h3 className="text-xs/[30px] font-semibold text-[#CCFBEF] mb-6 flex items-center">
         <BsFillChatFill className="mr-2" />
         FORECASTS
       </h3>
-      {/* First Forecast */}
       <div className="flex items-start justify-between">
         <div>
           <p className="text-[56px]/[68px] font-medium flex items-start">
@@ -28,7 +26,6 @@ const ForecastCard: React.FC<ForecastCardProps> = ({ forecast }) => {
       <p className="text-sm mt-3 mb-8">
             forecasted increase in your sales closed by the end of the current month
       </p>
-      {/* Second Forecast */}
       <div className="flex items-start justify-between">
         <div>
           <p className="text-[56px]/[68px] font-medium flex items-start">

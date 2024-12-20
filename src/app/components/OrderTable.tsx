@@ -32,10 +32,9 @@ const OrdersTable: React.FC<OrdersTableProps> = ({ orders }) => {
               key={index}
               className="text-sm text-gray-700 border-none hover:bg-gray-50"
             >
-              {/* Product */}
               <td className="py-6 px-4 flex items-center truncate" title={order.product}>
                 <img
-                  src="/Avatar.png" // Replace with your icon path
+                  src="/Avatar.png"
                   alt="Product"
                   className="w-8 h-8 mr-3 flex-shrink-0"
                 />
@@ -43,17 +42,12 @@ const OrdersTable: React.FC<OrdersTableProps> = ({ orders }) => {
                   {order.product}
                 </span>
               </td>
-              {/* Date */}
               <td className="py-6 px-4 truncate"><div>{order.date}</div><div className="text-xs">{order.time}</div></td>
               <td className="py-6 px-4 truncate">{order.timeSpent}</td>
-              {/* Time Spent */}
-              {/* Order Value */}
               <td className="py-6 px-4 truncate">{order.orderValue}</td>
-              {/* Commission */}
               <td className="py-6 px-4 truncate font-semibold text-gray-800">
                 {order.commission}
               </td>
-              {/* Actions */}
               <td className="py-6 px-4 text-right truncate">
                 <a
                   href="#"
@@ -68,34 +62,6 @@ const OrdersTable: React.FC<OrdersTableProps> = ({ orders }) => {
         </tbody>
       </table>
     </div>
-//     <div className="overflow-x-auto">
-//   <table className="table-auto w-full border-collapse border border-gray-200">
-//     <thead className="bg-gray-100">
-//       <tr>
-//         <th className="text-left px-6 py-3 min-w-[200px]">Product</th>
-//         <th className="text-left px-6 py-3 min-w-[200px]">Date</th>
-//         <th className="text-left px-6 py-3 min-w-[200px]">Time Spent</th>
-//         <th className="text-left px-6 py-3 min-w-[200px]">Order Value</th>
-//         <th className="text-left px-6 py-3 min-w-[200px]">Commission</th>
-//         <th className="text-right px-6 py-3 min-w-[200px]">Actions</th>
-//       </tr>
-//     </thead>
-//     <tbody>
-//       {orders.map((row, index) => (
-//         <tr key={index} className="border-t border-gray-200">
-//           <td className="px-6 py-4 min-w-[200px] truncate">{row.product}</td>
-//           <td className="px-6 py-4 min-w-[200px]">{row.date}</td>
-//           <td className="px-6 py-4 min-w-[200px]">{row.timeSpent}</td>
-//           <td className="px-6 py-4 min-w-[200px]">{row.orderValue}</td>
-//           <td className="px-6 py-4 min-w-[200px]">{row.commission}</td>
-//           <td className="px-6 py-4 text-right min-w-[200px]">
-//             <button className="text-teal-600 hover:underline">View Chat</button>
-//           </td>
-//         </tr>
-//       ))}
-//     </tbody>
-//   </table>
-// </div>
   );
 };
 

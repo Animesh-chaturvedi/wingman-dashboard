@@ -3,26 +3,24 @@ import Image from 'next/image';
 import { AiFillHome, AiFillMessage, AiFillSetting } from 'react-icons/ai';
 import { PiUsersFourFill } from "react-icons/pi";
 import { useState } from 'react';
+import { BsFillChatFill } from "react-icons/bs";
 
 const Sidebar = () => {
   const [selected, setSelected] = useState("home");
 
   const menuItems = [
     { id: "home", icon: <AiFillHome />, link: "/" },
-    { id: "chats", icon: <AiFillMessage />, link: "/chats" },
+    { id: "chats", icon: <BsFillChatFill />, link: "/chats" },
     { id: "sales", icon: <PiUsersFourFill />, link: "/sales" },
   ];
 
   return (
     <div className="hidden md:flex sticky top-0 bg-teal-800 text-white w-15 h-screen flex flex-col items-center py-6">
-      {/* Logo Section */}
       <div className="mb-8">
         <Image src="/Logo.png" alt="Logo" width={32} height={32} />
       </div>
 
       <div className="w-[28] h-[1px] bg-[#134E48] mb-8 mx-4"></div>
-
-      {/* Navigation Section */}
       <nav className="flex flex-col space-y-6 flex-grow">
         {menuItems.map((item) => (
           <a
@@ -39,8 +37,6 @@ const Sidebar = () => {
           </a>
         ))}
       </nav>
-
-      {/* Settings Section */}
       <div className="mt-auto">
         <a
           href="/settings"

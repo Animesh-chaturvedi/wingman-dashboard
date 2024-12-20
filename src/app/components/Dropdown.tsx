@@ -10,12 +10,11 @@ const Dropdown = ({ onChange }: { onChange: (value: string) => void }) => {
   const handleSelect = (option: string) => {
     setSelected(option);
     onChange(option);
-    setIsOpen(false); // Close dropdown on select
+    setIsOpen(false);
   };
 
   return (
     <div className="relative">
-      {/* Dropdown Button */}
       <button
         onClick={() => setIsOpen((prev) => !prev)}
         className="bg-white border border-gray-300 rounded-md px-4 py-2 text-[1rem]/[1.5rem] flex items-center space-x-2 shadow-sm hover:border-gray-400"
@@ -31,8 +30,6 @@ const Dropdown = ({ onChange }: { onChange: (value: string) => void }) => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
         </svg>
       </button>
-
-      {/* Dropdown Options */}
       {isOpen && (
         <div className="absolute right-0 mt-2 bg-white border border-gray-300 rounded-md shadow-lg w-full z-10">
           {options.map((option) => (
