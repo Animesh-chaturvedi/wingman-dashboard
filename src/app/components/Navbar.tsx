@@ -12,7 +12,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="sticky top-0 z-10 bg-white border-b border-gray-200 flex items-center p-6">
+    <div className="z-10 bg-white border-b border-gray-200 flex items-center py-6 px-9">
       <div className="flex space-x-6">
         {tabs.map((tab) => (
           <a
